@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kursi Cabin Glamping | Liburan Alam Chill & Aesthetic</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header & Navigasi -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-campground"></i>
+          <span>Kursi Cabin <span>Glamping</span></span>
+        </a>
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#about" class="nav-link">Tentang</a>
+          <a href="#tents" class="nav-link">Pilihan Menginap</a>
+          <a href="#facilities" class="nav-link">Fasilitas & Warung</a>
+          <a href="#gallery" class="nav-link">Galeri</a>
+          <a href="#location" class="nav-link">Lokasi</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            onclick="
+              openWAModal(
+                'Halo, saya ingin bertanya info reservasi Kursi Cabin Glamping.',
+              )
+            "
+            class="btn btn-primary nav-btn"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-toggle"
+            aria-label="Toggle Menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="badge"
+          ><i class="fa-solid fa-tree"></i> Aesthetic Wooden Cabin & Camp</span
+        >
+        <h1>Kehangatan Kabin Kayu di Tengah Asrinya Alam Pegunungan</h1>
+        <p>
+          Nikmati sensasi menginap di kabin kayu panggung dan area camping
+          dengan pemandangan bukit hijau yang menenangkan serta udara sejuk yang
+          menyegarkan pikiran.
+        </p>
+        <div class="hero-buttons">
+          <a href="#tents" class="btn btn-primary"
+            ><i class="fa-solid fa-tent"></i> Lihat Pilihan Menginap</a
+          >
+          <button
+            onclick="
+              openWAModal(
+                'Halo Admin, saya ingin konsultasi seputar reservasi.',
+              )
+            "
+            class="btn btn-outline"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Konsultasi WA
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container grid grid-2">
+        <div class="about-img-box">
+          <img
+            src="Glamping Kursi Cabin 1.jpg"
+            alt="Suasana Glamping Alam"
+            class="img-responsive rounded-lg shadow"
+          />
+          <div class="about-badge-floating">
+            <i class="fa-solid fa-mountain-sun"></i>
+            <div>
+              <h4>Pemandangan Bukit</h4>
+              <p>Suasana Sejuk & Asri</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">TENTANG KAMI</span>
+          <h2 class="section-title">Kenyamanan Kabin Kayu di Pelukan Alam</h2>
+          <p>
+            Kami menghadirkan konsep menginap bernuansa kayu panggung dan area
+            camping asri yang menyatu harmonis dengan lanskap pegunungan. Tempat
+            terbaik untuk bersantai menikmati udara segar bersama keluarga atau
+            sahabat.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i> 4 Unit Kabin Glamping
+              Eksklusif dengan Private Bathroom
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i> Pilihan Sewa Tenda Siap
+              Pakai & Area Bawa Tenda Sendiri
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i> Tempat Api Unggun Pribadi
+              & Free Wi-Fi di Setiap Area
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i> Warung Makanan, Kopi,
+              Gorengan, & Kayu Bakar di Lokasi
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilihan Menginap Section -->
+    <section class="tents section-padding bg-light" id="tents">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-subtitle">AKOMODASI & CAMPING</span>
+          <h2 class="section-title">Pilihan Tempat Menginap</h2>
+          <p>
+            Pilih tipe akomodasi yang sesuai dengan gaya liburan dan budget
+            Anda.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <!-- Card 1: Unit Glamping -->
+          <div class="tent-card">
+            <div class="tent-img">
+              <img src="Glamping Kursi Cabin 2.jpeg" alt="Unit Glamping" />
+              <span class="tent-tag">Kabin Utama (4 Unit)</span>
+            </div>
+            <div class="tent-content">
+              <h3>Unit Glamping</h3>
+              <p class="tent-desc">
+                Kabin kayu panggung estetik dengan fasilitas lengkap dan kamar
+                mandi pribadi untuk kenyamanan maksimal.
+              </p>
+              <div class="tent-meta-list">
+                <span
+                  ><i class="fa-solid fa-users"></i> Kapasitas s/d 2 Orang
+                  Dewasa</span
+                >
+                <span
+                  ><i class="fa-solid fa-bed"></i> Kasur Queen Size + 2
+                  Handuk</span
+                >
+                <span
+                  ><i class="fa-solid fa-bath"></i> Private Bathroom +
+                  Amenities</span
+                >
+                <span><i class="fa-solid fa-fire"></i> Tempat Api Unggun</span>
+                <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+              </div>
+              <div class="tent-footer">
+                <div class="price">
+                  <span class="amount">Rp 350.000</span>
+                  <span class="unit">/ malam</span>
+                </div>
+                <button
+                  onclick="
+                    openWAModal(
+                      'Halo Admin, saya berminat reservasi Unit Glamping (Rp 350.000/malam).',
+                    )
+                  "
+                  class="btn btn-primary btn-sm"
+                >
+                  Pesan via WA
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Sewa Tenda -->
+          <div class="tent-card">
+            <div class="tent-img">
+              <img src="Tenda Glamping.jpeg" alt="Sewa Tenda" />
+              <span class="tent-tag">Tenda Pengelola</span>
+            </div>
+            <div class="tent-content">
+              <h3>Sewa Tenda (Siap Pakai)</h3>
+              <p class="tent-desc">
+                Sensasi kemping praktis tanpa ribet. Tenda sudah kami siapkan
+                lengkap dengan perlengkapan tidur.
+              </p>
+              <div class="tent-meta-list">
+                <span
+                  ><i class="fa-solid fa-users"></i> Kapasitas s/d 4 Orang Per
+                  Tenda</span
+                >
+                <span
+                  ><i class="fa-solid fa-mattress-pillow"></i> 1 Kasur Lantai +
+                  2 Bantal</span
+                >
+                <span
+                  ><i class="fa-solid fa-restroom"></i> Toilet Umum Clean &
+                  Fresh</span
+                >
+                <span><i class="fa-solid fa-fire"></i> Tempat Api Unggun</span>
+                <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+              </div>
+              <div class="tent-footer">
+                <div class="price">
+                  <span class="amount">Rp 150.000</span>
+                  <span class="unit">+ Rp 25.000 / orang</span>
+                </div>
+                <button
+                  onclick="
+                    openWAModal(
+                      'Halo Admin, saya ingin sewa Tenda Pengelola (Rp 150k + Rp 25k/orang).',
+                    )
+                  "
+                  class="btn btn-primary btn-sm"
+                >
+                  Pesan via WA
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Bawa Tenda Sendiri -->
+          <div class="tent-card">
+            <div class="tent-img">
+              <img src="Bawa Tenda Sendiri.jpeg" alt="Bawa Tenda Sendiri" />
+              <span class="tent-tag">Camp Ground</span>
+            </div>
+            <div class="tent-content">
+              <h3>Bawa Tenda Sendiri</h3>
+              <p class="tent-desc">
+                Sewa tapak kemping (campsite) di area rumput asri untuk Anda
+                yang ingin membawa perlengkapan tenda sendiri.
+              </p>
+              <div class="tent-meta-list">
+                <span
+                  ><i class="fa-solid fa-campground"></i> Tapak Tenda Asri &
+                  Luas</span
+                >
+                <span
+                  ><i class="fa-solid fa-users"></i> Kapasitas
+                  Menyesuaikan</span
+                >
+                <span><i class="fa-solid fa-restroom"></i> Toilet Umum</span>
+                <span><i class="fa-solid fa-fire"></i> Tempat Api Unggun</span>
+                <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+              </div>
+              <div class="tent-footer">
+                <div class="price">
+                  <span class="amount">Rp 50.000</span>
+                  <span class="unit">+ Rp 25.000 / orang</span>
+                </div>
+                <button
+                  onclick="
+                    openWAModal(
+                      'Halo Admin, saya ingin memesan lokasi Bawa Tenda Sendiri (Rp 50k + Rp 25k/orang).',
+                    )
+                  "
+                  class="btn btn-primary btn-sm"
+                >
+                  Pesan via WA
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities & Warung Section -->
+    <section class="facilities section-padding" id="facilities">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-subtitle">KULINER & KEBUTUHAN</span>
+          <h2 class="section-title">Fasilitas Warung & Sarapan</h2>
+          <p>
+            Tak perlu khawatir lapar atau kehabisan perbekalan saat kemping di
+            tempat kami.
+          </p>
+        </div>
+
+        <div class="grid grid-2 warung-grid">
+          <!-- Card Paket Sarapan -->
+          <div class="menu-card highlight-card">
+            <div class="menu-badge">
+              <i class="fa-solid fa-utensils"></i> Paket Sarapan
+            </div>
+            <h3>Breakfast Hangat</h3>
+            <p class="menu-price">Rp 30.000 <span>/ porsi</span></p>
+            <ul class="menu-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Nasi Goreng Telur
+                Spesial
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Teh Hangat Nikmat
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card Warung Makan & Perbekalan -->
+          <div class="menu-card">
+            <div class="menu-badge">
+              <i class="fa-solid fa-store"></i> Warung Makan & Logistik
+            </div>
+            <h3>Tersedia di Warung Kami</h3>
+            <div class="warung-items-grid">
+              <span><i class="fa-solid fa-bowl-food"></i> Pop Mie</span>
+              <span><i class="fa-solid fa-mug-hot"></i> Kopi</span>
+              <span><i class="fa-solid fa-glass-water"></i> Teh</span>
+              <span><i class="fa-solid fa-cookie-bite"></i> Gorengan</span>
+              <span><i class="fa-solid fa-bottle-water"></i> Air Mineral</span>
+              <span
+                ><i class="fa-solid fa-fire-flame-curved"></i> Kayu Bakar</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini Grid Fasilitas Umum -->
+        <div class="grid grid-3 mini-facilities">
+          <div class="facility-box">
+            <div class="icon-wrap"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Free Wi-Fi</h3>
+            <p>Tetap terhubung di seluruh area kemping.</p>
+          </div>
+          <div class="facility-box">
+            <div class="icon-wrap"><i class="fa-solid fa-fire"></i></div>
+            <h3>Area Api Unggun</h3>
+            <p>Tersedia tempat api unggun di setiap pilihan menginap.</p>
+          </div>
+          <div class="facility-box">
+            <div class="icon-wrap"><i class="fa-solid fa-restroom"></i></div>
+            <h3>Kamar Mandi & Toilet</h3>
+            <p>
+              Private Bathroom di Glamping & Toilet Umum Bersih untuk Tenda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding bg-light" id="gallery">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-subtitle">GALERI FOTO</span>
+          <h2 class="section-title">Sudut Estetis Kursi Cabin Glamping</h2>
+        </div>
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="tents">Tenda & Kabin</button>
+          <button class="filter-btn" data-filter="nature">Pemandangan</button>
+        </div>
+        <div class="gallery-grid">
+          <div
+            class="gallery-item nature"
+            onclick="openLightbox('Pemandangan 2.jpeg')"
+          >
+            <img src="Pemandangan 2.jpeg" alt="Pemandangan Pagi Pegunungan" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item nature"
+            onclick="openLightbox('Pemandangan 1.jpeg')"
+          >
+            <img src="Pemandangan 1.jpeg" alt="Pemandangan Pagi" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item tents"
+            onclick="openLightbox('Fasilitas 2.jpeg')"
+          >
+            <img src="Fasilitas 2.jpeg" alt="Fasilitas" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item tents"
+            onclick="openLightbox('Fasilitas 1.jpeg')"
+          >
+            <img src="Fasilitas 1.jpeg" alt="Fasilitas" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item nature"
+            onclick="openLightbox('Glamping Kursi Cabin 1.jpg')"
+          >
+            <img src="Glamping Kursi Cabin 1.jpg" alt="Kabin Wood" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item tents"
+            onclick="openLightbox('BG Glamping Kursi Cabin.jpg')"
+          >
+            <img src="BG Glamping Kursi Cabin.jpg" alt="Pemandangan Alam" />
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & FAQ Section -->
+    <section class="location-faq section-padding" id="location">
+      <div class="container grid grid-2">
+        <div class="location-box">
+          <span class="section-subtitle">LOKASI KAMI</span>
+          <h2 class="section-title">Mudah Dijangkau & Asri</h2>
+          <p>
+            <i class="fa-solid fa-location-dot text-primary"></i> Kursi Cabin
+            Glamping, Bali
+          </p>
+          <div class="map-placeholder rounded-lg">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Klik tombol di bawah untuk petunjuk arah Google Maps</p>
+            <a
+              href="https://maps.app.goo.gl/j1czotkLuyRFFkc36?g_st=ac"
+              target="_blank"
+              class="btn btn-outline btn-sm"
+              >Buka Google Maps</a
+            >
+          </div>
+        </div>
+
+        <div class="faq-box" id="faq">
+          <span class="section-subtitle">PERTANYAAN UMUM</span>
+          <h2 class="section-title">FAQ (Sering Ditanyakan)</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Berapa harga & kapasitas tiap tempat menginap?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  • <strong>Unit Glamping (4 unit):</strong> Rp 350.000 / malam
+                  (Maks. 5 orang).<br />
+                  • <strong>Sewa Tenda:</strong> Rp 150.000 + Rp 25.000/orang
+                  (Tenda untuk maks. 4 orang).<br />
+                  • <strong>Bawa Tenda Sendiri:</strong> Rp 50.000 + Rp
+                  25.000/orang.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Fasilitas apa saja yang membedakan Glamping dan Tenda?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Unit Glamping mendapatkan Kasur Queen Size, 2 Handuk, serta
+                  Private Bathroom + Amenities. Sedangkan untuk Sewa Tenda
+                  disediakan 1 Kasur Lantai + 2 Bantal dengan toilet umum yang
+                  bersih. Seluruh area menginap mendapatkan fasilitas Tempat Api
+                  Unggun dan Free Wi-Fi.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Apakah ada makanan, minuman, dan kayu bakar di lokasi?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Ada! Kami memiliki warung yang menjual Pop Mie, Kopi, Teh,
+                  Gorengan, Air Mineral, serta Kayu Bakar untuk api unggun.
+                  Tersedia juga paket Sarapan Nasi Goreng Telur + Teh Hangat
+                  seharga Rp 30.000/porsi.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Bagaimana cara melakukan reservasi via WhatsApp?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Klik tombol "Pesan via WA" atau tombol WhatsApp melayang. Anda
+                  bisa memilih salah satu dari 2 kontak Admin aktif kami (Admin
+                  1 atau Admin 2) untuk mengonfirmasi ketersediaan tanggal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Sosmed -->
+    <footer class="footer" id="contact">
+      <div class="container grid grid-3">
+        <div class="footer-col">
+          <a href="#" class="logo text-white">
+            <i class="fa-solid fa-campground"></i> Kursi Cabin
+            <span>Glamping</span>
+          </a>
+          <p>
+            Destinasi kabin kayu panggung dan kemping estetis bertema alam untuk
+            mereda penat dan menciptakan kenangan manis bersama pasangan,
+            keluarga, maupun sahabat.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#tents">Pilihan Menginap</a></li>
+            <li><a href="#facilities">Fasilitas & Warung</a></li>
+            <li><a href="#gallery">Galeri Foto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi & Ikuti Kami</h4>
+          <p>
+            <i class="fa-brands fa-whatsapp text-primary"></i> Admin 1: +62
+            878-9464-2595
+          </p>
+          <p>
+            <i class="fa-brands fa-whatsapp text-primary"></i> Admin 2: +62
+            878-3031-3422
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/kursicabin.glamping?obrf=MTZlOWxqM3Y4eWJ3Ng=="
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Kursi Cabin Glamping. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <button
+      onclick="
+        openWAModal(
+          'Halo Admin, saya ingin bertanya ketersediaan tempat menginap.',
+        )
+      "
+      class="float-wa"
+      aria-label="Chat WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+    <!-- Lightbox Modal Gallery -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img src="" alt="Zoom Image" id="lightbox-img" />
+    </div>
+
+    <!-- Modal Pop-Up Pilihan 2 Admin WhatsApp -->
+    <div class="wa-modal" id="waModal" onclick="closeWAModalOnOutside(event)">
+      <div class="wa-modal-content">
+        <button class="wa-modal-close" onclick="closeWAModal()">&times;</button>
+        <div class="wa-modal-header">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h3>Pilih Admin WhatsApp</h3>
+          <p>Silakan pilih salah satu admin untuk menghubungi kami:</p>
+        </div>
+
+        <div class="wa-options">
+          <!-- Admin 1 -->
+          <a
+            href="#"
+            id="waLinkAdmin1"
+            onclick="
+              contactAdmin(WA_ADMIN_1);
+              return false;
+            "
+            class="wa-card"
+          >
+            <div class="wa-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="wa-text">
+              <strong>Admin 1</strong>
+              <span>+62 878-9464-2595</span>
+            </div>
+          </a>
+
+          <!-- Admin 2 -->
+          <a
+            href="#"
+            id="waLinkAdmin2"
+            onclick="
+              contactAdmin(WA_ADMIN_2);
+              return false;
+            "
+            class="wa-card"
+          >
+            <div class="wa-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="wa-text">
+              <strong>Admin 2</strong>
+              <span>+62 878-3031-3422</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
