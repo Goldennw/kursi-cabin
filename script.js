@@ -1,6 +1,6 @@
 // 1. WhatsApp Redirection (2 Nomor Admin)
 const WA_ADMIN_1 = "6287894642595";
-const WA_ADMIN_2 = "6287830313422";
+const WA_ADMIN_2 = "6285100094544";
 
 let currentWAMessage =
   "Halo Admin, saya ingin reservasi/tanya info mengenai Kursi Cabin Glamping.";
